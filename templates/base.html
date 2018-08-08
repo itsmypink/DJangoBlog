@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Black &amp; White</title>
+    <title>JAY &amp; JOU</title>
 
     <!-- meta -->
     <meta charset="UTF-8">
@@ -29,7 +29,7 @@
         <div class="row">
             <div class="col-md-4 col-sm-5 col-xs-8">
                 <div class="logo">
-                    <h1><a href="{% url 'Blog:index' %}"><b>Black</b> &amp; White</a></h1>
+                    <h1><a href="{% url 'Blog:index' %}"><b>JAY</b> &amp; JOU</a></h1>
                 </div>
             </div><!-- col-md-4 -->
             <div class="col-md-8 col-sm-7 col-xs-4">
@@ -44,7 +44,7 @@
                         <ul class="nav navbar-nav navbar-right">
                             <li class="cl-effect-11"><a href="{% url 'Blog:index' %}" data-hover="首页">首页</a></li>
                             <li class="cl-effect-11"><a href="full-width.html" data-hover="博客">博客</a></li>
-                            <li class="cl-effect-11"><a href="about.html" data-hover="关于">关于</a></li>
+                            <li class="cl-effect-11"><a href="{% url 'Blog:about' %}" data-hover="关于">关于</a></li>
                             <li class="cl-effect-11"><a href="contact.html" data-hover="联系">联系</a></li>
                         </ul>
                     </div><!-- /.navbar-collapse -->
@@ -63,7 +63,7 @@
     </header>
 </div>
 <div class="copyrights">Collect from <a href="http://www.cssmoban.com/">网页模板</a></div>
-<div class="copyrights">Modified by <a href="http://zmrenwu.com/">追梦人物的博客</a></div>
+<div class="copyrights">感谢 <a href="http://zmrenwu.com/">追梦人物的博客</a></div>
 
 <div class="content-body">
     <div class="container">
@@ -162,9 +162,9 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <p class="copyright">&copy 2017 - 采集自<a href="http://www.cssmoban.com/"
+                <p class="copyright">&copy 2018 - 采集自<a href="http://www.cssmoban.com/"
                                                         target="_blank" title="模板之家">模板之家</a>
-                    - 由<a href="http://zmrenwu.com/" title="网页模板" target="_blank">追梦人物的博客</a>修改
+                    - 感谢 <a href="http://zmrenwu.com/" title="网页模板" target="_blank">追梦人物的博客</a>
                 </p>
             </div>
         </div>
@@ -178,13 +178,13 @@
         <ul>
             <li><a href="{% url 'Blog:index' %}">首页</a></li>
             <li><a href="full-width.html">博客</a></li>
-            <li><a href="about.html">关于</a></li>
+            <li><a href="{% url 'Blog:about' %}">关于</a></li>
             <li><a href="contact.html">联系</a></li>
         </ul>
     </nav>
 </div>
 
-<script src="js/script.js"></script>
+<script src="{% static 'Blog/js/script.js' %}"></script>
 
 </body>
 </html>

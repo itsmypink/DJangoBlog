@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>JAY &amp; JOU</title>
+    <!-- meta -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	{% load staticfiles %}
+	{% load blog_tags %}
+    <!-- css -->
+    <link rel="stylesheet" href="{% static 'Blog/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="{% static 'Blog/css/pace.css' %}">
+    <link rel="stylesheet" href="{% static 'Blog/css/custom.css' %}">
+
+    <!-- js -->
+    <script src="{% static 'Blog/js/jquery-2.1.3.min.js' %}"></script>
+    <script src="{% static 'Blog/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'Blog/js/pace.min.js' %}"></script>
+    <script src="{% static 'Blog/js/modernizr.custom.js' %}"></script>
+	<link rel="stylesheet" href="{% static 'Blog/css/highlights/bw.css' %}">
+	</head>
+
+	<body id="page">
+		<div class="container">	
+			<header id="site-header">
+				<div class="row">
+					<div class="col-md-4 col-sm-5 col-xs-8">
+						<div class="logo">
+							<h1><a href="index.html"><b>JAY</b> &amp; JOU</a></h1>
+						</div>
+					</div><!-- col-md-4 -->
+					<div class="col-md-8 col-sm-7 col-xs-4">
+						<nav class="main-nav" role="navigation">
+							<div class="navbar-header">
+  								<button type="button" id="trigger-overlay" class="navbar-toggle">
+    								<span class="ion-navicon"></span>
+  								</button>
+							</div>
+
+							<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+  								<ul class="nav navbar-nav navbar-right">
+    								<li class="cl-effect-11"><a href="{% url 'Blog:index' %}" data-hover="首页">首页</a></li>
+									<li class="cl-effect-11"><a href="full-width.html" data-hover="博客">博客</a></li>
+									<li class="cl-effect-11"><a href="{% url 'Blog:about' %}" data-hover="关于">关于</a></li>
+									<li class="cl-effect-11"><a href="contact.html" data-hover="联系">联系</a></li>
+  								</ul>
+							</div><!-- /.navbar-collapse -->
+						</nav>
+						<div id="header-search-box">
+							<a id="search-menu" href="#"><span id="search-icon" class="ion-ios-search-strong"></span></a>
+							<div id="search-form" class="search-form">
+								<form role="search" method="get" id="searchform" action="#">
+									<input type="search" placeholder="Search" required>
+									<button type="submit"><span class="ion-ios-search-strong"></span></button>
+								</form>				
+							</div>
+						</div>
+					</div><!-- col-md-8 -->
+				</div>
+			</header>
+		</div>
+       		<div class="content-body">
+			<div class="container">
+				<div class="row">
+					<main class="col-md-12">
+						<h1 class="page-title">JAY&JOU</h1>
+						<article class="post">
+							<div class="entry-content clearfix">
+								<figure class="img-responsive-center">
+									<img class="img-responsive" src="{% static 'Blog/img/me.jpg' %}" alt="Developer Image">
+								</figure>
+								<p style="text-indent: 2em;" >  宇宙就是座黑暗森林，每个文明都是带枪的猎人，像幽灵潜行于林间，轻轻拨开挡路的树枝，竭力不让脚步发出一点声音，连呼吸都必须小心翼翼……他必须小心，因为林中到处都有与他一样潜行的猎人。如果他发现了别的生命，不管是不是猎人，不管是天使还是恶魔，不管是娇嫩的婴儿还是步履蹒跚的老人，也不管是天仙般的少女还是天神般的男孩，能做的只有一件事：开枪消灭之。在这片森林中，他人就是地狱，就是永恒的威胁，任何暴露自己存在的生命都将很快被消灭</p>
+								<p></p>
+								<p></p>
+								<div class="height-40px"></div>
+								<h2 class="title text-center">《三体》</h2>
+								<!--
+								<ul class="social">
+									<li class="facebook"><a href="#"><span class="ion-social-facebook"></span></a></li>
+									<li class="twitter"><a href="#"><span class="ion-social-twitter"></span></a></li>
+									<li class="google-plus"><a href="#"><span class="ion-social-googleplus"></span></a></li>
+									<li class="tumblr"><a href="#"><span class="ion-social-tumblr"></span></a></li>
+								</ul>
+								-->
+							</div>
+						</article>
+					</main>
+				</div>
+			</div>
+		</div>
+		<footer id="site-footer">
+			<div class="container">
+				<div class="row">
+				<!--
+					<div class="col-md-12">
+						<p class="copyright">&copy; 2018 ThemeWagon.com</p>
+					</div>
+				-->
+				</div>
+			</div>
+		</footer>
+
+		<!-- Mobile Menu -->
+		<div class="overlay overlay-hugeinc">
+			<button type="button" class="overlay-close"><span class="ion-ios-close-empty"></span></button>
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="full-width.html">Blog</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+
+		<!-- <script src="{% static 'Blog/js/script.js' %}"></script> -->
+		
+	</body>
+</html>
+
+
+
+
